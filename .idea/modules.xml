@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Storysquare Webapp.iml" filepath="$PROJECT_DIR$/Storysquare Webapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StorysquareWeb.iml" filepath="$PROJECT_DIR$/StorysquareWeb.iml" />
     </modules>
   </component>
 </project>
