@@ -25,7 +25,8 @@
 
 </head>
 
-<body class="full">
+<body>
+<div class="container-full">
 
     <!-- Navigation -->
     <nav class="navbar navbar-fixed-top" role="navigation">
@@ -60,16 +61,22 @@
     </nav>
 
     <!-- Page Content -->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-sm-12">
-                <h1>The Big Picture</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, iusto, unde, sunt incidunt id sapiente rerum soluta voluptate harum veniam fuga odit ea pariatur vel eaque sint sequi tenetur eligendi.</p>
+    <section id="main-content">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="tagline-text">Pictures belong on paper</p>
+                    <p>It is wayyy more fun to share your pictures</p>
+                </div>
+            </div>
+            <div class="row">
+                {{> emailForm}}
             </div>
         </div>
-        <!-- /.row -->
-    </div>
-    <!-- /.container -->
+    </section>
+
+    {{> footer}}
+
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -77,6 +84,7 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
+</div>
 </body>
 
 </template>
