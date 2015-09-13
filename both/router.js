@@ -7,7 +7,7 @@ Router.configure({
 });
 
 // one way of determine the route
-Router.route('/testavimas', {
+Router.route('/', {
     template: 'homePage',
     name: 'homePage'
 });

@@ -1,41 +1,56 @@
 <template name="homePage">
-<div id="homePage" class="text-center">
+<div id="homePage">
 
     <section id="presentation">
-        <div class="jumbotron text-center">
-            <div class="container">
-                <div class="row">
-                    <h1>Welcome to storysquare</h1>
-                    <h2>Get your pictures printed and sent to you</h2>
+        <div class="jumbotron">
+                <div class="main-image">
+                </div>
+        </div>
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-12">
+                    <h1>Storysquare</h1>
+                    <h2>Copenhagen's friendliest photo printing service</h2>
                 </div>
             </div>
-
         </div>
     </section>
 
+    <section id="slogan">
+
+    </section>
+
+    <hr/>
+
     <section id="products">
-        <div class="container-fluid">
+        <div class="container text-center">
             <div class="row">
                 <h2>Products</h2>
             </div>
             <div class="row">
-                <div class="col-sm-6 col-md-6 col-lg-6">
+                <div class="col-sm-12 col-md-6 col-lg-6">
                     <div class="thumbnail">
-                        <img src="img/print-type-small.jpg" alt="...">
+                        <img src="img/print-square-lg.jpg" alt="...">
                         <div class="caption">
-                            <h3>Retro</h3>
-                            <p>10x10 cm retro style print</p>
-                            <a href="{{pathFor route='order'}}" class="btn btn-primary btn-lg">Order</a>
+                            <h3>Square</h3>
+                            <p>10x10 cm square print</p>
+                            <p>From 70 dkk</p>
+                            <a href="{{pathFor route='order'}}" class="btn btn-default btn-lg">Order</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-6 col-lg-6">
+                <div class="col-sm-12 col-md-6 col-lg-6">
                     <div class="thumbnail">
-                        <img src="img/print-type-small.jpg" alt="...">
-                        <div class="caption">
-                            <h3>Retro</h3>
-                            <p>10x10 cm retro style print</p>
-                            <a href="{{pathFor route='order'}}" class="btn btn-primary btn-lg">Order</a>
+                        <img src="img/print-retro-lg.jpg" alt="...">
+                        <div class="row">
+                            <div class="col-md-6 text-left">
+                                <h3>Retro</h3>
+                                <p>10x10 cm retro style print with your custom tagline</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p>From 70 dkk</p>
+                                <a href="{{pathFor route='order'}}" class="btn btn-default btn-lg">Order</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -44,14 +59,16 @@
     </section>
 
     <section id="contact">
-        <div class="container-fluid">
+        <div class="container-fluid text-center">
             <div class="row">
-                <h2>You can reach us</h2>
-                <ul class="list-inline">
-                    <li>Facebook</li>
-                    <li>Instagram</li>
-                    <li>Email</li>
-                </ul>
+                <div class="col-lg-12">
+                    <h2>Got any questions, ideas or just keen to chat, say</h2>
+                    <a href="mailto:hello@storysquare.co" class="mailto">hello@storysquare.co</a>
+                    <ul class="list-inline">
+                        <li><a href="https://instagram.com/storysquare.co/"><i class="fa fa-instagram fa-5x"></i></a></li>
+                        <li><a href="https://www.facebook.com/storysquareprints"><i class="fa fa-facebook fa-5x"></i></a></li>
+                    </ul>
+                </div>
             </div>
 
         </div>
@@ -59,13 +76,12 @@
 
     <section id="about">
         <div class="container-fluid">
-            <div class="row red">
-                <h2>Our story</h2>
-                <ul class="list-inline">
-                    <li>Facebook</li>
-                    <li>Instagram</li>
-                    <li>Email</li>
-                </ul>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Our story</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+
             </div>
 
         </div>

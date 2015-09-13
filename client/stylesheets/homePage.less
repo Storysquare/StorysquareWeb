@@ -1,26 +1,93 @@
+@darkPrimaryColor:   #1B162A;
+@primaryColor:       #F7F4F3;
+@lightPrimaryColor:  #FDFFFC;
+@textPrimaryColor:   #212121;
+@accentColor:        #FF4838;
+@secondaryTextColor: #FE5D26;
+@dividerColor:       #B6B6B6;
+
+section {
+  padding: 50px 0 50px 0;
+}
+
+ul.nav li a, ul.nav li a:visited {
+  //color: #anycolor !important;
+}
+
+ul.nav li a:hover, ul.nav li a:active {
+  text-decoration: none;
+  //color: #anycolor !important;
+}
+
+ul.nav li.active a {
+  //color: #anycolor !important;
+}
+
+.btn {
+  border: none;
+}
+
+.btn-default {
+  color: @lightPrimaryColor;
+  background-color: @accentColor;
+}
+
+.thumbnail {
+  border-radius: 0;
+  border: hidden;
+}
+
+.navbar.transparent {
+  background: rgba(255,255,255,0.6);
+  //background-color: aqua;
+}
+
 #homePage {
 
-  .navbar {
-    margin-bottom: 0;
-  }
-
-  .jumbotron {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
-  .row {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background-color: antiquewhite;
-  }
-
   #presentation {
-    background-image: url("img/coveriui.png");
+
+    padding: 0;
+
+    .jumbotron{
+      margin-bottom: 0;
+      //background-color: darkkhaki;
+      background-image: url("img/cover-rankos.jpg");
+      background-position: 0% 100%;
+      background-size: cover;
+      height: 500px;
+    }
+
+    .main-image {
+
+    }
   }
 
-  .red {
-    background-color: red;
+  #slogan {
+    padding-top: 40px;
+    h1 {
+      font-size: 40pt;
+      color: @darkPrimaryColor;
+    }
+    h2 {
+      color: @darkPrimaryColor;
+    }
+  }
+
+  #products {
+    background-color: @primaryColor;
+  }
+
+  #contact {
+    background-color: @accentColor;
+    .mailto {
+      font-size: 40pt;
+      color: @primaryColor;
+    }
+  }
+
+  #about {
+    background-color: @primaryColor;
+    color: #FF5266;
   }
 
 }
